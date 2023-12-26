@@ -1,0 +1,43 @@
+@use "./base";
+@use "./components";
+@use "./layout";
+@use "./utilities";
+@use "./abstracts/" as *;
+
+main {
+  .card > div:not(:last-child) {
+    border-bottom: 1px solid var(--neutral-grayish-blue);
+  }
+  p {
+    color: var(--neutral-very-dark-blu);
+    line-height: 1.5;
+    font-size: 0.95rem;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  article {
+    flex-flow: row !important;
+    h3 {
+      font-size: 1rem !important;
+      line-height: 1 !important;
+      font-weight: 700 !important;
+      padding-block-end: 1rem;
+      &:hover {
+        color: var(--primary-soft-red) !important;
+      }
+    }
+    span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--neutral-grayish-blue);
+      font-weight: 700;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

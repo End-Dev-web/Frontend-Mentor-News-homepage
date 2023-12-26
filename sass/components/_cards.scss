@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.card {
+  background-color: var(--neutral-very-dark-blue);
+  padding: $size-7;
+  p {
+    color: var(--neutral-grayish-blue);
+  }
+}
